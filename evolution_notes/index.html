@@ -1,0 +1,723 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
+    
+    
+      
+        <title>Unit 2 - Abril's Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2b4465f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-2-evolution" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Abril&#39;s Docs" class="md-header__button md-logo" aria-label="Abril's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Abril's Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Biology Notes
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Abril&#39;s Docs" class="md-nav__button md-logo" aria-label="Abril's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Abril's Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Biology Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Biology Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Biology Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Unit 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Unit 2
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modes-of-evolution" class="md-nav__link">
+    Modes of Evolution
+  </a>
+  
+    <nav class="md-nav" aria-label="Modes of Evolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#natural-selection" class="md-nav__link">
+    Natural Selection
+  </a>
+  
+    <nav class="md-nav" aria-label="Natural Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criteria" class="md-nav__link">
+    Criteria
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speciation" class="md-nav__link">
+    Speciation
+  </a>
+  
+    <nav class="md-nav" aria-label="Speciation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#species-concepts" class="md-nav__link">
+    Species Concepts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genetics" class="md-nav__link">
+    Genetics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#barriers" class="md-nav__link">
+    Barriers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-vocabulary" class="md-nav__link">
+    Miscellaneous Vocabulary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classification_notes/" class="md-nav__link">
+        Unit 3
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modes-of-evolution" class="md-nav__link">
+    Modes of Evolution
+  </a>
+  
+    <nav class="md-nav" aria-label="Modes of Evolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#natural-selection" class="md-nav__link">
+    Natural Selection
+  </a>
+  
+    <nav class="md-nav" aria-label="Natural Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criteria" class="md-nav__link">
+    Criteria
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speciation" class="md-nav__link">
+    Speciation
+  </a>
+  
+    <nav class="md-nav" aria-label="Speciation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#species-concepts" class="md-nav__link">
+    Species Concepts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genetics" class="md-nav__link">
+    Genetics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#barriers" class="md-nav__link">
+    Barriers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-vocabulary" class="md-nav__link">
+    Miscellaneous Vocabulary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="unit-2-evolution">Unit 2: Evolution</h1>
+<h2 id="modes-of-evolution">Modes of Evolution</h2>
+<ul>
+<li><strong>Evolution</strong>: change in the gene pool of a population over time<ul>
+<li><strong>Types</strong> of evolution:<ol>
+<li><strong>Population shrinkage</strong>: new genes take over and chance takes over, genetic drift</li>
+<li><strong>Non-random mating</strong>: sexual selection, leads to different gene pools</li>
+<li><strong>Mutations</strong>: flaws change gene pool</li>
+<li><strong>Movement</strong>: new individuals come and go, gene flow</li>
+<li><strong>Natural selection</strong>: weaker die off, stronger survive</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="natural-selection">Natural Selection</h3>
+<ul>
+<li>the process by which traits that confer any degree of improved fitness increase in a population over generations<ul>
+<li><strong>Environmental stress</strong>: any condition that reduces/impairs the ability of something to survive or reproduce in an environment</li>
+<li><strong>Variation in fitness</strong>: an organism's ability to survive and reproduce in a particular environment.</li>
+<li><strong>Heritability</strong>: the ability of a trait to be passed genetically to one’s offspring</li>
+</ul>
+</li>
+</ul>
+<h4 id="criteria">Criteria</h4>
+<ol>
+<li><strong>Variation in the phenotypes</strong> of a population: different phenotypes in a population</li>
+<li><strong>Traits</strong>: (based in the genotype) have to be inheritable</li>
+<li><strong>Environmental pressure</strong></li>
+<li><strong>Differential survival</strong> based on traits giving some organisms in the population an advantage (traits that give some people advantages)<ul>
+<li><strong>Directional</strong> selection: goes to the right or to the left</li>
+<li><strong>Stabilizing</strong> selection: curve goes whoop</li>
+<li><strong>Disruptive</strong> selection: selection away from the mean in both directions</li>
+</ul>
+</li>
+<li><strong>Genetic Drift</strong>: variations in allele frequency in a population due to chance processes, most prominent in small populations<ul>
+<li><strong>Bottleneck</strong> effect: decreased genetic variation in a population due to an event that eliminated a large percentage of a population due to chance (as opposed to naturally selecting individuals)</li>
+<li><strong>Founder’s</strong> effect: when a small group branches off from a population and begins a separate population that is genetically representative of the “founders” but not necessarily the ancestral population as a whole<ul>
+<li><strong>Ancestral</strong> population: the population from which an organism descended</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Gene flow:</strong> when members of a previously separate population join and interbreed with a new population, altering the existing genetic makeup of the population</li>
+<li><strong>Mutation</strong>: a chance event in which an allele is altered at birth, resulting in a previously unknown allele to the population</li>
+<li><strong>Non-random mating:</strong> the process by which organisms choose mates based on some factor<ul>
+<li><strong>Intersexual</strong> selection: a process in which organisms of the opposite sex discriminate between mating partners based on observable characteristics that generally display fitness of some sort<ul>
+<li><strong>Fitness</strong>: survival and reproductive success</li>
+</ul>
+</li>
+<li><strong>Intrasexual</strong> selection: competition between organisms of the same sex (usually males) for limited mating partners, typically involves some display of fitness in the form of physical competition</li>
+</ul>
+</li>
+</ol>
+<h2 id="speciation">Speciation</h2>
+<ul>
+<li><strong>Speciation</strong>: how a new species of animal or plant is created, speciation occurs when one part of a population separates from another, the process by which a population branches into two or more species due to some form of reproductive barrier, macroevolution</li>
+<li><strong>Allopatric</strong> speciation: speciation occurring due to a geographical barrier between two populations, physically preventing them from even being together.</li>
+<li><strong>Sympatric</strong> speciation: speciation that occurs among two populations in close geographical proximity, but a non-geographic reproductive barrier exists preventing them from exchanging genes</li>
+<li><strong>Polyploid</strong> speciation: The condition in which a normally diploid cell or organism acquires one or more additional sets of chromosomes.</li>
+</ul>
+<h3 id="species-concepts">Species Concepts</h3>
+<ul>
+<li><strong>Biological</strong> species concept: a species is a population of organisms that under natural conditions are able to mate and produce fertile offspring, a group of individuals that have the potential to mate in nature and produce viable, fertile offspring (members of a species can potentially interbreed and produce fertile offspring)</li>
+<li><strong>Morphological</strong> species concept: a group of individuals that have similar features and/or structures</li>
+<li><strong>Phylogenetic</strong> species concept: the smallest group of individuals that share a common ancestor and form one branch on the tree of life</li>
+<li><strong>Ecological</strong> species concept: a set of organisms adapted to a particular set of resources, called a niche, in the environment</li>
+</ul>
+<h2 id="genetics">Genetics</h2>
+<ul>
+<li><strong>Gene</strong>: a section of DNA that codes for a protein that influences a specific trait (like eye color gene)</li>
+<li><strong>Allele</strong>: a variant of a gene (like blue (b) or brown (B) eye color genes)</li>
+<li><strong>Genotype</strong>: the specific combination of alleles an organism has for a specific gene, organisms commonly have two alleles of each gene, one from each parent (like having two brown eye alleles, BB)</li>
+<li><strong>Phenotype</strong>: the observed trait resulting from having a specific genotype (physical, like having brown eyes)</li>
+</ul>
+<h2 id="barriers">Barriers</h2>
+<ul>
+<li><strong>Prezygotic</strong> barrier: a barrier that prevents two organisms in an environment from mating successfully<ul>
+<li><strong>Habitat</strong> barrier: two organisms that live in the same region but occupy different habitats (i.e. the canopy of a tree vs. the brush below)</li>
+<li><strong>Mechanical</strong> barrier: two organisms do not have compatible reproductive organs</li>
+<li><strong>Gametic</strong> barrier: the gametes (sperm and egg cells) of two organisms are incompatible</li>
+<li><strong>Behavioral</strong> isolation: two organisms do not recognize each other as potential mates</li>
+<li><strong>Temporal</strong> isolation: two organisms have different mating seasons</li>
+</ul>
+</li>
+<li><strong>Postzygotic</strong> barrier: a barrier that prevents two organisms from producing fertile offspring even though mating may occur, commonly the result of hybridization between species</li>
+</ul>
+<h2 id="miscellaneous-vocabulary">Miscellaneous Vocabulary</h2>
+<ul>
+<li><strong>Population</strong>: a group of organisms of one species that interbreed and live in the same place at the same time</li>
+<li><strong>Adaptive radiation</strong>: occurs when a species gives rise to many new species after colonizing a region with diverse habitats, evolution of many diverse species from a common ancestor, previous mass extinctions give new species through founder effect to have no competition.</li>
+<li><strong>Cambrian explosion</strong>: rise in oxygen levels, boosted cellular respiration, started the diverse species, lead to adaptive radiation</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../classification_notes/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit 3" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Unit 3
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Abril LM
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+    
+  </body>
+</html>

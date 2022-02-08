@@ -1,0 +1,874 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
+    
+    
+      
+        <title>Unit 3 - Abril's Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2b4465f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-3-classification" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Abril&#39;s Docs" class="md-header__button md-logo" aria-label="Abril's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Abril's Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../evolution_notes/" class="md-tabs__link md-tabs__link--active">
+        Biology Notes
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Abril&#39;s Docs" class="md-nav__button md-logo" aria-label="Abril's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Abril's Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Biology Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Biology Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Biology Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evolution_notes/" class="md-nav__link">
+        Unit 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Unit 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Unit 3
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#three-domains-of-life" class="md-nav__link">
+    Three Domains of Life
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Domains of Life">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bacteria" class="md-nav__link">
+    Bacteria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archaea" class="md-nav__link">
+    Archaea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eukarya" class="md-nav__link">
+    Eukarya
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kingdoms" class="md-nav__link">
+    Kingdoms
+  </a>
+  
+    <nav class="md-nav" aria-label="Kingdoms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protista" class="md-nav__link">
+    Protista
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fungi" class="md-nav__link">
+    Fungi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plantae" class="md-nav__link">
+    Plantae
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animalia" class="md-nav__link">
+    Animalia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree-of-life-project" class="md-nav__link">
+    Tree of Life Project
+  </a>
+  
+    <nav class="md-nav" aria-label="Tree of Life Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zebra-mussel" class="md-nav__link">
+    Zebra Mussel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-information" class="md-nav__link">
+    Miscellaneous Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Miscellaneous Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structures" class="md-nav__link">
+    Structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-logy" class="md-nav__link">
+    -logy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtaining-food" class="md-nav__link">
+    Obtaining Food
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    Materials
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#three-domains-of-life" class="md-nav__link">
+    Three Domains of Life
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Domains of Life">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bacteria" class="md-nav__link">
+    Bacteria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archaea" class="md-nav__link">
+    Archaea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eukarya" class="md-nav__link">
+    Eukarya
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kingdoms" class="md-nav__link">
+    Kingdoms
+  </a>
+  
+    <nav class="md-nav" aria-label="Kingdoms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#protista" class="md-nav__link">
+    Protista
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fungi" class="md-nav__link">
+    Fungi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plantae" class="md-nav__link">
+    Plantae
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animalia" class="md-nav__link">
+    Animalia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree-of-life-project" class="md-nav__link">
+    Tree of Life Project
+  </a>
+  
+    <nav class="md-nav" aria-label="Tree of Life Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zebra-mussel" class="md-nav__link">
+    Zebra Mussel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-information" class="md-nav__link">
+    Miscellaneous Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Miscellaneous Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structures" class="md-nav__link">
+    Structures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-logy" class="md-nav__link">
+    -logy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtaining-food" class="md-nav__link">
+    Obtaining Food
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    Materials
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="unit-3-classification">Unit 3: Classification</h1>
+<h2 id="three-domains-of-life">Three Domains of Life</h2>
+<ul>
+<li>major DNA and structure differences that separate the 3 domains</li>
+<li>archaea and eukarya have more in common than bacteria with one of them</li>
+<li>organisms in a domain share similar cell structures and similar ribosomal RNA</li>
+<li>no multicellular prokaryotes</li>
+</ul>
+<h3 id="bacteria">Bacteria</h3>
+<ul>
+<li>prokaryotes → single-celled microorganisms</li>
+<li>have cell walls</li>
+<li>have DNA</li>
+<li>no membrane-bound organelles</li>
+<li>no nucleus</li>
+</ul>
+<h3 id="archaea">Archaea</h3>
+<ul>
+<li>prokaryotes → single-celled organisms</li>
+<li>have cell walls (that do not contain peptidoglycan like bacteria)</li>
+<li>have DNA</li>
+<li>no membrane-bound organelles</li>
+<li>no nucleus</li>
+<li>many are extremophiles (like the extremes: extreme halophiles - salt lovers, extreme thermophiles - heat lovers)</li>
+</ul>
+<h3 id="eukarya">Eukarya</h3>
+<ul>
+<li>can be single-celled or multicellular</li>
+<li>vertebrates don't have cell walls but plants do</li>
+<li>have DNA (in nucleus)</li>
+<li>have membrane-bound organelles</li>
+<li>have a nucleus (enclosed within a nuclear envelope)</li>
+</ul>
+<p><strong>Summary</strong>: 
+- Bacteria (no nuclei)
+- Archaea (no nuclei but tougher outer wall; more closely related to Eukarya than bacteria)
+- Eukarya (have nuclei, can be single or multi-celled)</p>
+<h2 id="kingdoms">Kingdoms</h2>
+<ul>
+<li>all are eukaryotes</li>
+</ul>
+<h3 id="protista">Protista</h3>
+<ul>
+<li>autotroph (algae) and heterotroph (protozoans), can be mixotrophic: capable of photosynthesis and heterotrophy</li>
+<li>most are unicellular but some can be multicellular</li>
+<li>can be found in moist and/or aquatic environments</li>
+<li>some have cell walls made of cellulose, some don't</li>
+<li>classified as a eukaryote that is not within a plant, fungus, or animal; wide variety of protists</li>
+<li>organisms include:<ul>
+<li>amoebae</li>
+<li>red algae</li>
+<li>dinoflagellates</li>
+<li>diatoms</li>
+<li>euglena</li>
+<li>slime molds</li>
+</ul>
+</li>
+</ul>
+<h3 id="fungi">Fungi</h3>
+<ul>
+<li>heterotrophs</li>
+<li>usually multicellular but can be single-celled</li>
+<li>most have cell walls made of chitin</li>
+<li>absorb food into their bodies</li>
+</ul>
+<h3 id="plantae">Plantae</h3>
+<ul>
+<li>autotrophs (make their glucose from sunlight energy)</li>
+<li>multicellular</li>
+<li>have cell walls made of cellulose</li>
+<li>over 500 mya, algal ancestors of plants could have carpeted the fringes of lakes and coastal marshes, eventually evolving into plants</li>
+<li>plants and green algae called charophytes<ul>
+<li>Are thought to have evolved from a common ancestor</li>
+<li>Have complex multicellular bodies</li>
+<li>Are photosynthetic eukaryotes</li>
+</ul>
+</li>
+<li>Three key events occured in the history of the plant kingdom<ol>
+<li>The origin of land plants</li>
+<li>the origin of vascular plants</li>
+<li>the origin of seed plants</li>
+</ol>
+</li>
+</ul>
+<h3 id="animalia">Animalia</h3>
+<ul>
+<li>multicellular (no single-celled animals)</li>
+<li>mostly heterotrophic</li>
+<li>have three germ layers (with the exception of sponges)</li>
+<li>no cell walls</li>
+<li>ingest food</li>
+<li>their life cycles and embryo development also differentiate them from other kingdoms</li>
+</ul>
+<h2 id="tree-of-life-project">Tree of Life Project</h2>
+<ul>
+<li>radial symmetry: could be split any way</li>
+<li>bilateral symmetry: can only be split in one way
+![[Untitled (14).png|370]]</li>
+</ul>
+<h3 id="zebra-mussel">Zebra Mussel</h3>
+<ul>
+<li>cellular respiration</li>
+<li>eukaryote</li>
+<li>mollusca</li>
+<li>first appeared in the cambrian period (540 mya)</li>
+<li>bilateral symmetry</li>
+</ul>
+<h2 id="miscellaneous-information">Miscellaneous Information</h2>
+<ul>
+<li>nucleus: membrane-bound organelle that contains the cell’s chromosomes</li>
+<li>all lifeforms have cell membranes</li>
+<li>the Cambrian explosion (450 mya) occurred because a major ice age ended, and there was an increase in oxygen</li>
+<li>parsimony: an optimality criterion under which the phylogenetic tree that minimizes the total number of character-state changes is to be preferred (the shortest possible tree that explains the data is considered best)</li>
+<li>exaptation: a trait, feature, or structure of an organism or taxonomic group that takes on a function when none previously existed</li>
+<li>convergent evolution: the process whereby distantly related organisms independently evolve similar traits to adapt to similar necessities</li>
+</ul>
+<h3 id="structures">Structures</h3>
+<ul>
+<li>vestigial structure: a feature of an organism that is a historical remnant of a structure that served an important function in the organism’s ancestors</li>
+<li>homologous structures: similar physical features in organisms that share a common ancestor</li>
+<li>analogous structures: features of different species that are similar in function but not necessarily in structure and which do not derive from a common ancestral feature</li>
+</ul>
+<h3 id="-logy">-logy</h3>
+<ul>
+<li>homology: similarity due to shared ancestry</li>
+<li>analogy: similarity that is not due to shared ancestry</li>
+</ul>
+<h3 id="obtaining-food">Obtaining Food</h3>
+<ul>
+<li>autotroph: makes own food using light, water, carbon dioxide, or other chemicals</li>
+<li>heterotroph: gets food from other organisms, it eats</li>
+<li>chemotroph: ingest organic matter, an organism that obtains energy mainly from carbon dioxide and from other inorganic chemicals through a process called chemosynthesis</li>
+</ul>
+<h2 id="materials">Materials</h2>
+<p>TBA</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../evolution_notes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit 2" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Unit 2
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Abril LM
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+    
+  </body>
+</html>
