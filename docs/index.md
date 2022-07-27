@@ -1,4 +1,4 @@
-# SoundBrain Lab
+# SoundBrain Lab!
 
 This site is still under construction. Thank you for your patience.
 
